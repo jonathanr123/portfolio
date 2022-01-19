@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
+body::-webkit-scrollbar{
+    width: 7px;
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: orange;
+    background-image:-webkit-linear-gradient(45deg,rgba(255, 255, 255, 0.3) 20%,transparent 20%,transparent 40%,rgba(255, 255, 255, 0.3) 40%,rgba(255,255,255,.3) 60%,transparent 60%,transparent 80%,rgba(255, 255, 255, 0.3) 80%);
+    border-radius: 10px;
+}
+
 #scroll{
     background: #FF8008;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
@@ -8,6 +19,7 @@
 }
 
 #home{
+    overflow-x: hidden;
     width: 100%;
     background: #FF8008;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
@@ -19,16 +31,13 @@
 
 #about{
     width: 100%;
-    height: 700px;
     background: white;
 }
 
 #education{
     width: 100%;
-    height: 400px;
-    background: #FF8008;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 700px;
+    background-image: linear-gradient(to top right, #4facfe 0%, #00f2fe 100%);
     position: relative;
 }
 
@@ -36,7 +45,8 @@
     font-family: 'The Nautigal', cursive;
     font-size: 30px;
     font-weight: 700;
-    padding: 0 60px;
+    padding: 0;
+    padding-left: 20px;
     text-decoration: none;
     color: white;
 }
@@ -113,6 +123,34 @@
     height: 100%;
 }
 
+/* Section About */
+.about-content{
+    padding: 4rem 0 1.4rem;
+    padding-left: 30px;
+    text-align: left;
+    }
+
+#parrafoAbout{
+    font-size: 28px;
+    color: black;  /* fallback for old browsers */
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+}
+
+#parrafoAbout a{
+    font-size: 28px;
+    color: #FF8008;  /* fallback for old browsers */
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+}
+
+#imagenAbout{
+    max-width: 100%;
+    width: auto;
+    height: 100%;
+}
+
+
 /* Wave */
 .custom-shape-divider-bottom-1642442524 {
     position: absolute;
@@ -154,3 +192,14 @@
 .custom-shape-divider-top-1642493106 .shape-fill {
     fill: #FFFFFF;
 }
+
+.round{
+    width: 200px;
+    height: 200px;
+    top: 15px;
+    border-radius: 50%;
+    background:red;
+    opacity: 0.1;
+    position: absolute;
+}
+
