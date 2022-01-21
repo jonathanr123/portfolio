@@ -42,6 +42,29 @@ body::-webkit-scrollbar-thumb{
     position: relative;
 }
 
+#skills{
+    overflow-x: hidden;
+    width: 100%;
+    background: white;
+}
+
+#projects{
+    overflow-x: hidden;
+    width: 100%;
+    background: #0f9b0f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f9b0f, #11cf11, #00ff00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f9b0f, #11cf11, #00ff00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 1200px;
+    position: relative;
+}
+
+#resume{
+    overflow-x: hidden;
+    width: 100%;
+    background: white;
+    position: relative;
+}
+
 #logo{
     font-family: 'The Nautigal', cursive;
     font-size: 30px;
@@ -151,8 +174,48 @@ body::-webkit-scrollbar-thumb{
     height: 100%;
 }
 
+/* Section Skills */
+.skills-content{
+    padding: 4rem 0 1.4rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    }
 
-/* Wave */
+#skills h1{
+    color:#4facfe;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size:50px;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Section Projects */
+.project-content{
+    padding: 12rem 0 1.4rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    }
+
+#projects h1{
+    color:white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size:50px;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Section Resume */
+.resume-content{
+    padding: 4rem 0 1.4rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+
+/* Wave Opacity*/
 .custom-shape-divider-bottom-1642442524 {
     position: absolute;
     bottom: 0;
@@ -174,6 +237,7 @@ body::-webkit-scrollbar-thumb{
     fill: #FFFFFF;
 }
 
+/* Wave Triangle */
 .custom-shape-divider-top-1642493106 {
     position: absolute;
     top: 0;
@@ -194,6 +258,28 @@ body::-webkit-scrollbar-thumb{
     fill: #FFFFFF;
 }
 
+/* Wave Book */
+.custom-shape-divider-bottom-1642719256 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1642719256 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 149px;
+}
+
+.custom-shape-divider-bottom-1642719256 .shape-fill {
+    fill: #FFFFFF;
+}
+
 .round{
     width: 200px;
     height: 200px;
@@ -202,6 +288,51 @@ body::-webkit-scrollbar-thumb{
     background:red;
     opacity: 0.1;
     position: absolute;
+}
+
+/* Wave */
+.custom-shape-divider-top-1642743847 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1642743847 svg {
+    position: relative;
+    display: block;
+    width: calc(144% + 1.3px);
+    height: 194px;
+}
+
+.custom-shape-divider-top-1642743847 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Wave opacity resume*/
+
+.custom-shape-divider-bottom-1642746153 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1642746153 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 206px;
+}
+
+.custom-shape-divider-bottom-1642746153 .shape-fill {
+    fill: #FFFFFF;
 }
 
 
@@ -252,7 +383,7 @@ body::-webkit-scrollbar-thumb{
     width: 100%;
     background-image: linear-gradient(to top right, #4facfe 0%, #00f2fe 100%);
     position: relative;
-    padding-top: 150px 0;
+    padding-top: 150px;
   }
   #timeline h1 {
     color:white;
@@ -449,3 +580,25 @@ body::-webkit-scrollbar-thumb{
   }
 
   /* Fin Timeline */
+  
+  #card {
+    margin:20px 4px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #f0f6fc, #f4f9fd, #feffff);
+    box-shadow:  10px 10px 8px #30699b,-2px -2px 8px #c2c6c7;
+    transition: transform .2s;
+  }
+
+  #card:hover{
+    transform: scale(1.5);
+  }
+
+  .redondo{
+    width: 100px;
+    height: 100px;
+    top: 80px;
+    border-radius: 50%;
+    background:rgba(255, 255, 255, 0.473);
+    position: absolute;
+    padding: 20px;
+}
