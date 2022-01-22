@@ -65,6 +65,13 @@ body::-webkit-scrollbar-thumb{
     position: relative;
 }
 
+#contact{
+  overflow-x: hidden;
+  width: 100%;
+  background-image: linear-gradient(to  right, #000000 0%, #0fe032 100%);
+  position: relative;
+}
+
 #logo{
     font-family: 'The Nautigal', cursive;
     font-size: 30px;
@@ -162,6 +169,7 @@ body::-webkit-scrollbar-thumb{
     padding: 4rem 0 1.4rem;
     padding-left: 30px;
     text-align: left;
+    overflow: hidden;
     }
 
 #parrafoAbout{
@@ -240,6 +248,33 @@ body::-webkit-scrollbar-thumb{
     box-shadow:  10px 10px 8px #004e92,-2px -2px 8px #c2c6c7;
     transition: transform .2s;
   }
+
+/* Section Contact */
+.contact-content{
+  padding: 5rem 0 1.4rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+#contact h1{
+  color:white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size:50px;
+  text-shadow: 1px 1px 2px black;
+}
+
+#contact img {
+  margin:10px 2px;
+  width: 50%;
+  transition: transform 1s;
+}
+
+#contact img:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
 
 
 /* Wave Opacity*/
@@ -361,6 +396,26 @@ body::-webkit-scrollbar-thumb{
     fill: #FFFFFF;
 }
 
+/* Wave contact */
+.custom-shape-divider-top-1642829448 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1642829448 svg {
+  position: relative;
+  display: block;
+  width: calc(157% + 1.3px);
+  height: 140px;
+}
+
+.custom-shape-divider-top-1642829448 .shape-fill {
+  fill: #FFFFFF;
+}
 
 /* TIMELINE */
 @media (min-width: 1000px) {
@@ -410,6 +465,7 @@ body::-webkit-scrollbar-thumb{
     background-image: linear-gradient(to top right, #4facfe 0%, #00f2fe 100%);
     position: relative;
     padding-top: 150px;
+    overflow-x: hidden;
   }
   #timeline h1 {
     color:white;
