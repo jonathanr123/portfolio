@@ -30,11 +30,3 @@ window.addEventListener('scroll', function()  {
         }
   });
 
-
-  $(window).on('load', function () {
-    setTimeout(function () {
-  $(".loader").css({visibility:"hidden",opacity:"0",height:"0",transition: "all 1s"})
-}, 2000);
-   
-});
-
