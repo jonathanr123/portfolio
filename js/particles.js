@@ -1,7 +1,7 @@
 particlesJS({
     "particles": {
       "number": {
-        "value": 70,
+        "value": 50,
         "density": {
           "enable": true,
           "value_area": 631.3181133058181
@@ -72,10 +72,10 @@ particlesJS({
       "events": {
         "onhover": {
           "enable": true,
-          "mode": "repulse"
+          "mode": "grab"
         },
         "onclick": {
-          "enable": true,
+          "enable": false,
           "mode": "push"
         },
         "resize": true

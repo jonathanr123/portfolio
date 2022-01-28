@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Portfolio</title>
+  <title>Jonathan Rodriguez | Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name=”theme-color” content=”#FF8008” />
@@ -13,7 +13,7 @@
 
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    href="css/animate.min.css"
   />
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -24,20 +24,21 @@
   
   <script src="index.js"></script>
   <script src="js/scroll.js"></script>
+  <script src="js/function.js"></script>
 
 </head>
 <body>
-  <div class="loader">
-    
+  <div class="loader">    
     <div></div>
     <div></div>
-    <div></div><h1 style="margin-top:80px; color:white; width:100%; position:absolute; top:50%; text-align:center">Wait a moment...</h1>
+    <div></div>
+    <h1 style="margin-top:80px; color:white; width:100%; position:absolute; top:50%; text-align:center">Wait a moment...</h1>
   </div>
 <div id="scroll">
-  <nav id="cosa" class="navbar navbar-expand-lg navbar-light sticky-top sticky">
+  <nav id="cosa" class="navbar navbar-expand-lg navbar-dark sticky-top sticky">
     <div class="container-fluid">
       <a class="navbar-brand" id="logo" href="#">< Jonathan Rodriguez /></a>
-      <button class="navbar-toggler" style="margin-right:40px" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" style="margin-right:5px; border-color: white;border:2px solid" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -63,6 +64,15 @@
           <li class="nav-item">
             <a class="nav-link nav-a" id="nav-aa" href="#contact"><img src="icons/contacts.svg">Contact</a>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="icons/world.png">EN
+            </a>
+            <ul class="dropdown-menu" id="language-content" aria-labelledby="navbarScrollingDropdown" style="background: orange;min-width: 6rem">
+              <li><a class="dropdown-item" href="#" id="language">ES</a></li>
+              <li><a class="dropdown-item" href="#" id="language">EN</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -73,13 +83,17 @@
     <div class="row">
       <div class="col-12 col-md-6 col-lg-6 col-xl-6">
         <div style="margin-top:10%">
-        <h1 class="animate__animated animate__lightSpeedInLeft" style="animation-duration: 2s; font-size:65px; text-shadow: 1px 1px 2px black;">Hi, I'm Jonathan!</h1>
-        <h1 class="animate__animated animate__lightSpeedInLeft" style="animation-duration: 3s; text-shadow: 1px 1px 2px black;">Welcome to My World...</h1>
-        <h1 class="animate__animated animate__heartBeat" style="animation-iteration-count:infinite;animation-duration: 10s; text-shadow: 1px 1px 2px black;">I'm the software developer you are looking for.</h1>
+        <h1 class="animate__animated animate__lightSpeedInLeft" style="animation-duration: 2s; font-size:65px;">Hi, I'm Jonathan!</h1>
+        <h1 class="animate__animated animate__lightSpeedInLeft" style="animation-duration: 3s;">Welcome to My World...</h1>
+        <h1 class="animate__animated animate__heartBeat" style="animation-iteration-count:infinite;animation-duration: 10s;">I'm the software developer you are looking for.</h1>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-6 col-xl-6">
         <img class="animate__animated animate__fadeInRight" id="imagenHome" src="images/fotoperfil.png">
+        <div style="position: absolute;top:10px;right: 10px;"><div class="toggle-btn" id="_1st-toggle-btn">
+          <input type="checkbox" id="checkbox">
+          <span></span>
+        </div></div>
       </div>
     </div>
   </div>

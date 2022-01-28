@@ -38,7 +38,7 @@ body::-webkit-scrollbar-thumb{
 #education{
     overflow-x: hidden;
     width: 100%;
-    background-image: linear-gradient(to top right, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(to top right, #4facfe 0%, #00f2fe 100%);
     position: relative;
 }
 
@@ -154,9 +154,13 @@ body::-webkit-scrollbar-thumb{
 .home-content{
     padding: 1rem 0 1.4rem;
     padding-left: 30px;
-    color: #f5f5f5;
     text-align: left;
     }
+
+.home-content h1 {
+    color:white;
+    text-shadow: 1px 1px 2px black;
+}
 
 #imagenHome{
     max-width: 100%;
@@ -293,6 +297,12 @@ body::-webkit-scrollbar-thumb{
     display: block;
     width: calc(106% + 1.3px);
     height: 158px;
+}
+
+@media (max-width: 720px) {
+  .custom-shape-divider-bottom-1642442524 svg {
+    width: calc(170% + 1.3px);
+  }
 }
 
 .custom-shape-divider-bottom-1642442524 .shape-fill {
@@ -462,7 +472,7 @@ body::-webkit-scrollbar-thumb{
   
   #timeline {
     width: 100%;
-    background-image: linear-gradient(to top right, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(to top right, #4facfe 0%, #00f2fe 100%);
     position: relative;
     padding-top: 150px;
     overflow-x: hidden;
@@ -885,3 +895,100 @@ body::-webkit-scrollbar-thumb{
     background: white;
     animation-delay: -0.10s;
   }
+
+  .toggle-btn {
+    position: relative;
+    width: 78px;
+    height: 39px;
+    margin: 0 auto;
+    border-radius: 40px;
+  }
+  
+  input[type="checkbox"] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+  
+  /* First toggle btn */
+  
+  #_1st-toggle-btn span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    opacity: 1;
+    background-color: #fff;
+    box-shadow: 0px 2px 25px #d9d9d9;
+    border-radius: 40px;
+    transition: 0.2s ease background-color, 0.2s ease opacity;
+  }
+  
+  #_1st-toggle-btn span:before,
+  #_1st-toggle-btn span:after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    transition: 0.5s ease transform, 0.2s ease background-color;
+  }
+  
+  #_1st-toggle-btn span:before {
+    background-color: #fff;
+    transform: translate(-58px, 0px);
+    z-index: 1;
+  }
+  
+  #_1st-toggle-btn span:after {
+    background-color: #FFC837;
+    transform: translate(8px, 0px);
+    z-index: 0;
+  }
+  
+  #_1st-toggle-btn input[type="checkbox"]:checked + span {
+    background-color: #000;
+  }
+  
+  #_1st-toggle-btn input[type="checkbox"]:active + span {
+    opacity: 0.5;
+  }
+  
+  #_1st-toggle-btn input[type="checkbox"]:checked + span:before {
+    background-color: #000;
+    transform: translate(30px, -10px);
+  }
+  
+  #_1st-toggle-btn input[type="checkbox"]:checked + span:after {
+    background-color: #fff;
+    transform: translate(40px, 0px);
+  }
+  
+  /* First toggle btn completed */
+
+  #language{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 19.5px;
+    text-decoration: none;
+    color: white;
+  }
+
+  #language img{
+    height: 1.3em;
+    width: 1.3em;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-right: 3px;
+}
