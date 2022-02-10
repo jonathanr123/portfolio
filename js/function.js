@@ -20,7 +20,7 @@ $(document).on('change','#checkbox' ,function(e) {
         $("#home").css("background","linear-gradient(to right, #001B20, #000000)");
         $(".home-content h1").css("color","rgb(0, 217, 255)");
         $(".home-content h1").css("text-shadow", "1px 1px 2px rgb(0, 217, 255)");
-        document.getElementById("imagenHome").src = "../images/fotoperfilBlue.png";
+        document.getElementById("imagenHome").src = "./images/fotoperfilBlue.png";
         $(".custom-shape-divider-bottom-1642442524 .shape-fill").css("fill","#0C6370");
         /* About */
         $("#about").css("background","#0C6370");
@@ -28,7 +28,7 @@ $(document).on('change','#checkbox' ,function(e) {
         $("#about b").css("color","rgb(0, 217, 255)");
         $("#parrafoAbout b").css("color","white");
         $("#parrafoAbout a").css("color","rgb(0, 217, 255)");
-        document.getElementById("imagenAbout").src = "../images/developerBlue.svg";
+        document.getElementById("imagenAbout").src = "./images/developerBlue.svg";
         $(".custom-shape-divider-top-1642493106 .shape-fill").css("fill","#0C6370");
         /* Education */
         $("#timeline").css("background","linear-gradient(to right, #001B20, #000000)");
@@ -72,7 +72,7 @@ $(document).on('change','#checkbox' ,function(e) {
         $("#home").css("background","");
         $(".home-content h1").css("color","");
         $(".home-content h1").css("text-shadow", "");
-        document.getElementById("imagenHome").src = "../images/fotoperfil.png";
+        document.getElementById("imagenHome").src = "./images/fotoperfil.png";
         $(".custom-shape-divider-bottom-1642442524 .shape-fill").css("fill","");
         /* About */
         $("#about").css("background","");
@@ -80,7 +80,7 @@ $(document).on('change','#checkbox' ,function(e) {
         $("#about b").css("color","#FF8008");
         $("#parrafoAbout b").css("color","");
         $("#parrafoAbout a").css("color","#FF8008");
-        document.getElementById("imagenAbout").src = "../images/developer.svg";
+        document.getElementById("imagenAbout").src = "./images/developer.svg";
         $(".custom-shape-divider-top-1642493106 .shape-fill").css("fill","");
         /* Education */
         $("#timeline").css("background","");
