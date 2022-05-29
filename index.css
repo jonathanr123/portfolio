@@ -38,7 +38,7 @@ body::-webkit-scrollbar-thumb{
 #education{
     overflow-x: hidden;
     width: 100%;
-    background-image: linear-gradient(to top right, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(to top right, #4facfe 0%, #00f2fe 100%);
     position: relative;
 }
 
@@ -63,6 +63,13 @@ body::-webkit-scrollbar-thumb{
     width: 100%;
     background: white;
     position: relative;
+}
+
+#contact{
+  overflow-x: hidden;
+  width: 100%;
+  background-image: linear-gradient(to  right, #000000 0%, #0fe032 100%);
+  position: relative;
 }
 
 #logo{
@@ -147,9 +154,13 @@ body::-webkit-scrollbar-thumb{
 .home-content{
     padding: 1rem 0 1.4rem;
     padding-left: 30px;
-    color: #f5f5f5;
     text-align: left;
     }
+
+.home-content h1 {
+    color:white;
+    text-shadow: 1px 1px 2px black;
+}
 
 #imagenHome{
     max-width: 100%;
@@ -162,6 +173,7 @@ body::-webkit-scrollbar-thumb{
     padding: 4rem 0 1.4rem;
     padding-left: 30px;
     text-align: left;
+    /*overflow: hidden;*/
     }
 
 #parrafoAbout{
@@ -241,6 +253,33 @@ body::-webkit-scrollbar-thumb{
     transition: transform .2s;
   }
 
+/* Section Contact */
+.contact-content{
+  padding: 5rem 0 1.4rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+#contact h1{
+  color:white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size:50px;
+  text-shadow: 1px 1px 2px black;
+}
+
+#contact img {
+  margin:10px 2px;
+  width: 50%;
+  transition: transform 1s;
+}
+
+#contact img:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
 
 /* Wave Opacity*/
 .custom-shape-divider-bottom-1642442524 {
@@ -258,6 +297,12 @@ body::-webkit-scrollbar-thumb{
     display: block;
     width: calc(106% + 1.3px);
     height: 158px;
+}
+
+@media (max-width: 720px) {
+  .custom-shape-divider-bottom-1642442524 svg {
+    width: calc(170% + 1.3px);
+  }
 }
 
 .custom-shape-divider-bottom-1642442524 .shape-fill {
@@ -361,6 +406,26 @@ body::-webkit-scrollbar-thumb{
     fill: #FFFFFF;
 }
 
+/* Wave contact */
+.custom-shape-divider-top-1642829448 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1642829448 svg {
+  position: relative;
+  display: block;
+  width: calc(157% + 1.3px);
+  height: 140px;
+}
+
+.custom-shape-divider-top-1642829448 .shape-fill {
+  fill: #FFFFFF;
+}
 
 /* TIMELINE */
 @media (min-width: 1000px) {
@@ -377,9 +442,9 @@ body::-webkit-scrollbar-thumb{
       content: "";
       width: 9px;
       height: 9px;
-      background-color: #bdbdbd;
-      border-radius: 9px;
+      background: rgb(16, 41, 58);
       box-shadow: 0px 0px 2px 8px #f7f7f7;
+      transform: rotate(45deg);
     }
   }
   .demo-card:nth-child(1) {
@@ -407,9 +472,10 @@ body::-webkit-scrollbar-thumb{
   
   #timeline {
     width: 100%;
-    background-image: linear-gradient(to top right, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(to top right, #4facfe 0%, #00f2fe 100%);
     position: relative;
     padding-top: 150px;
+    overflow-x: hidden;
   }
   #timeline h1 {
     color:white;
@@ -450,7 +516,7 @@ body::-webkit-scrollbar-thumb{
   }
   @media (min-width: 1000px) {
     #timeline .demo-card-wrapper::after {
-      border-left: 1px solid #bdbdbd;
+      border-left: 2px solid #ffffff;
     }
   }
   #timeline .demo-card {
@@ -739,3 +805,190 @@ body::-webkit-scrollbar-thumb{
     padding:20px 30px;
     padding-top:2px;
   }
+  
+  .fadeTop {
+    opacity: 0; 
+    transform: translate(0, 100%);
+    transition: all 1s;
+  }
+
+  .fadeBottom {
+    opacity: 0; 
+    transform: translate(0, -100%);
+    transition: all 1s;
+  }
+  
+  .fadeRight {
+    opacity: 0;
+    transform: translate(200%, 0) skewX(-30deg);
+    transition: all 1s;
+  }
+
+  .fadeLeft {
+    opacity: 0;
+    transform: translate(-200%, 0) skewX(30deg);
+    transition: all 1s;
+  }
+
+  .zoomIn {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+    transition: all 1s;
+  }
+
+  .flipY {
+    opacity: 0;
+    transform: perspective(400px) rotateY(90deg);
+    animation-timing-function: ease-in;
+    transition: all 1s;
+    transition-duration: 30s;
+    animation-duration: 30s;
+  }
+
+  
+  .visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  .loader{
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    z-index: 9999;
+    transition: all 2s;
+  }
+
+  .loader div{
+    background: rgb(255, 255, 255);
+    width: 16px;
+    height: 60px;
+    margin-left: 10px;
+    animation:loader 1.2s infinite;
+    transform: translate(-200%, 0) skewX(30deg);
+    transition: all 1s;
+  }
+
+  @keyframes loader{
+    50%{
+      height: 100px;
+    }
+  }
+
+  .loader div:nth-child(1){
+    background: white;
+    animation-delay: -0.40s;
+  }
+
+  .loader div:nth-child(2){
+    background: white;
+    animation-delay: -0.20s;
+  }
+
+  .loader div:nth-child(3){
+    background: white;
+    animation-delay: -0.10s;
+  }
+
+  .toggle-btn {
+    position: relative;
+    width: 78px;
+    height: 39px;
+    margin: 0 auto;
+    border-radius: 40px;
+  }
+  
+  input[type="checkbox"] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+  
+  /* First toggle btn */
+  
+  #_1st-toggle-btn span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    opacity: 1;
+    background-color: #fff;
+    box-shadow: 0px 2px 25px #d9d9d9;
+    border-radius: 40px;
+    transition: 0.2s ease background-color, 0.2s ease opacity;
+  }
+  
+  #_1st-toggle-btn span:before,
+  #_1st-toggle-btn span:after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    transition: 0.5s ease transform, 0.2s ease background-color;
+  }
+  
+  #_1st-toggle-btn span:before {
+    background-color: #fff;
+    transform: translate(-58px, 0px);
+    z-index: 1;
+  }
+  
+  #_1st-toggle-btn span:after {
+    background-color: #FFC837;
+    transform: translate(8px, 0px);
+    z-index: 0;
+  }
+  
+  #_1st-toggle-btn input[type="checkbox"]:checked + span {
+    background-color: #000;
+  }
+  
+  #_1st-toggle-btn input[type="checkbox"]:active + span {
+    opacity: 0.5;
+  }
+  
+  #_1st-toggle-btn input[type="checkbox"]:checked + span:before {
+    background-color: #000;
+    transform: translate(30px, -10px);
+  }
+  
+  #_1st-toggle-btn input[type="checkbox"]:checked + span:after {
+    background-color: #fff;
+    transform: translate(40px, 0px);
+  }
+  
+  /* First toggle btn completed */
+
+  #language{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 19.5px;
+    text-decoration: none;
+    color: white;
+  }
+
+  #language img{
+    height: 1.3em;
+    width: 1.3em;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-right: 3px;
+}
